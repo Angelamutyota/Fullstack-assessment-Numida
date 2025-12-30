@@ -1,3 +1,31 @@
+# Numida Technical Assessment
+
+This is my submission for the Numida full-stack engineer technical assessment (December 2025).
+
+## Key Features Implemented
+
+- **GraphQL**: Updated schema to expose `loan_payments` with nested relationship and resolver  
+- **Frontend**: Fetches loans + payments, categorizes them into "On Time" (green), "Late" (orange), "Defaulted" (red), "Unpaid" (grey) with clean card UI  
+- **Categorization Logic**: Pure function `categorizePayments` (no external libraries) in `src/utils.ts`  
+- **Bonus REST Endpoint**: `/api/payments` (POST) to add payments with validation (loan ID check)  
+- **Auto-refresh**: After adding payment, the loan list updates automatically (Apollo refetchQueries)  
+- **Error Handling**: Friendly messages for missing/invalid fields, non-existent loan IDs, etc.  
+- **Documentation**: Well-commented code + this README  
+- **Tests**: Basic unit tests for payment categorization logic  
+- **Video Walkthrough**: [Link to your video here]
+
+## Setup Instructions
+
+1. Backend: `cd server && docker compose up --build`  
+2. Frontend: `cd web && npm install && npm run compile && npm run dev`  
+3. Access: Frontend → http://localhost:5173 | GraphQL → http://localhost:2024/graphql
+
+Thank you for reviewing my work!  
+Happy to discuss any part in detail.
+
+
+
+
 ![Numida](../logo.numida.png)
 
 # What are we looking for in an engineer?
